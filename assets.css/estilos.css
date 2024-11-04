@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap'); */
 
 * {
     padding: 0;
@@ -8,8 +8,8 @@
 
 html {
     text-align: center;
-    margin: 0px 3%;
-    font-family: "Roboto Slab", serif;
+    margin: 0px 4%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -68,10 +68,21 @@ header img {
     animation: imagensServicos 1ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
+    text-align: start;
+    color: rgb(255, 255, 255);
 }
 
 .image-txt-serv #google-ads-img {
     width: 200px;
+}
+.first-section p {
+    text-align: start;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 0, 0);
+    animation: imagensServicos 1ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
 }
 
 .second-section {
@@ -79,8 +90,10 @@ header img {
 }
 
 footer {
-
-    padding: 10%;
+    background-color: red;
+    margin: 15px 0;
+    border-radius: 5px;
+    padding: 1%;
 }
 
 .feedback-section {
@@ -121,7 +134,7 @@ h4 {
     padding: 3px;
     border-radius: 3px;
     animation-name: sale;
-    animation-duration: 3s;
+    animation-duration: 2000ms;
     animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
     animation-iteration-count: infinite;
 }
@@ -130,37 +143,23 @@ nav {
     margin: 30px auto;
 }
 
-ul {
-    z-index: 999;
-    position: fixed;
-    gap: 20px;
-    display: flex;
-    list-style: none;
-    text-transform: uppercase;
-    padding: 10px;
 
-}
-
-a {
-    color: red;
-    font-weight: bolder;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.245);
-    padding: 4px;
-    border-radius: 4px;
-    letter-spacing: 1px;
+a:hover {
+    background-color: rgba(255, 0, 0, 0.307);
+    color: rgb(255, 255, 255);
 }
  .fa-brands {
-    color: red;
+    color:#ffffff;
     
-    width: 10%;
-    font-size: 30px;
+    width: 20%;
+    font-size: 25px;
 }
 
 @keyframes sale {
     from {
         color: red;
         background-color: red;
+
     }
 }
 
